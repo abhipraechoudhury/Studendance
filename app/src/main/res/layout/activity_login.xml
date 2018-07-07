@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:gravity="center"
+        android:id="@+id/largeLabel"
+        android:layout_weight="4"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="5"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/usingCard"
+            android:onClick="usingCard"
+            android:gravity="left"
+            android:background="@mipmap/using_card"
+            android:layout_marginRight="20dp"/>
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/usingCredentials"
+            android:onClick="usingCredentials"
+            android:background="@mipmap/using_credentials"
+            android:gravity="right"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+</LinearLayout>
